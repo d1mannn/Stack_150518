@@ -10,9 +10,10 @@ Stack<type>::Stack()
 }
 
 template<typename type>
-Stack<type>::Stack(type * arr)
+Stack<type>::Stack(type * arr, int n)
 {
-	this->length = sizeof(arr) / sizeof(type); // узнать размерность массива не передавая его размер )
+	//this->length = sizeof(arr) / sizeof(type); // узнать размерность массива не передавая его размер )
+	this->length = n;
 	this->els = new type[length];
 	this->buf_size = length;
 	for (int i = 0; i < length; i++)

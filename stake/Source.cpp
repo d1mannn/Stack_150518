@@ -4,13 +4,16 @@
 int main()
 {
 	setlocale(LC_ALL, "");
-	Stack<int> s;
+	//Stack<int> s;
 	/*s.push(3);
 	s.push(2);*/
-	for (int i = 0; i < 10; i++)
+	int arr[3] = { 1, 2, 3 };
+	Stack<int>s(arr, 3);
+	s.push(10);
+	/*for (int i = 0; i < 10; i++)
 	{
 		s[i];
-	}
+	}*/
 	/*cout << s.top() << endl;
 	s.pop();
 	cout << s.top() << endl;
@@ -22,7 +25,7 @@ int main()
 		cout << s.top() << endl;
 		s.pop();
 	}
-	int arr[3] = { 1, 2, 3 };
+	
 	//Stack<int>(arr);
 	system("pause");
 	return 0;

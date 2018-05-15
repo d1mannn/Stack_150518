@@ -6,7 +6,7 @@ class Stack
 {
 public:
 	Stack();
-	Stack(type * arr);
+	Stack(type * arr, int n);
 	Stack(const Stack<type> & obj);
 	virtual ~Stack();
 
